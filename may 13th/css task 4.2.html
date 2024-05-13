@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+.card{
+    position: relative;
+    border: 1px solid black;
+    height: 400px;
+    width: 200px;
+    float: inline-start;
+    margin: 10px;
+
+    
+}
+footer{
+            padding-bottom: 5px;
+            padding-top: 5px;
+            width: 100%;
+            background-color: black;
+            color: white;
+            text-align: center;
+            position: absolute; bottom: 0;
+        }
+.pic{
+    width: 200px; 
+}
+
+p{
+    padding: 10px;
+}
+</style>
+
+
+</head>
+
+<body>
+
+ <div class="card">
+<header><h2 style="text-align: center;">A short heading</h2></header>
+<main>
+<img src="hot-air-balloons.jpg" class="pic">
+<p>If you place an absolutely positioned 
+    element WITHIN a relative element then it acts as you described.</p>
+</main>
+ </div>
+    
+<div class="card">
+    <header><h2 style="text-align: center;">A short heading</h2></header>
+    <main>
+    <img src="hot-air-balloons.jpg " class="pic">
+    <p> short content </p>
+    </main>
+    <footer>I have a footer!</footer>
+</div>
+
+<div class="card">
+    <header><h2 style="text-align: center;">A long heading in this card</h2></header>
+    <main>
+    <img src="hot-air-balloons.jpg" class="pic">
+    <p>If you place an absolutely positioned 
+        element WITHIN a relative element then it acts as you described.</p>
+    </main>
+    <footer>I have a footer!</footer>
+</div>
+
+</body>
+</html>

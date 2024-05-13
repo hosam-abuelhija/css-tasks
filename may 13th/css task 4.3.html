@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+
+ .container{
+    border: 1px dashed black;
+    height: fit-content;
+    width: fit-content;
+  }
+
+  .red {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    display: inline-block;
+  }
+
+  .green1{
+    position: static;
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    display: inline-block;
+  }
+  
+  .green2{
+    position: relative; top: 20px; left: 20px;
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    display: inline-block;
+  }
+
+  .green3{
+    position: absolute; top: 440px; left: 20px;
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    display: inline-block;
+  }
+</style>
+</head>
+<body>
+    <p>Position : Static</p>
+    <div class="container">
+        <div class="red">One</div>
+        <div class="green1">Two</div>
+        <div class="red">Three</div>
+        <div class="red">Four</div>
+    </div>
+<br><br>
+    <p>Position : relative</p>
+    <div class="container">
+        <div class="red">One</div>
+        <div class="green2">Two</div>
+        <div class="red">Three</div>
+        <div class="red">Four</div>
+    </div>
+    <br><br>
+    <p>Position : absolut</p>
+    <div class="container">
+        <div class="red">One</div>
+        <div class="green3">Two</div>
+        <div class="red">Three</div>
+        <div class="red">Four</div>
+    </div>
+</body>
+</html>
